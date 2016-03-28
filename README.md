@@ -18,6 +18,21 @@ Planned platform
 * Windows 8
 * Windows 7
 
+## Installation and Usage
+
+As this project is just few days old, currently there's no binary available.
+Please clone the source code and build it on your machine yourself.
+
+*Usage*
+* compile `go build -o main *.go`
+* run `./main`
+
+*Sample Output*
+```
+REMOTE NOT EXIST: Developer ID Certification Authority, 187AA9A8C296210C
+REMOTE NOT EXIST: OISTE WISeKey Global Root GB CA, 76B1205274F0858746B3F8231AF6C2C0
+```
+
 ## License
 
 MIT License
