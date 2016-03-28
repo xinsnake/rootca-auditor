@@ -49,11 +49,10 @@ func main() {
 		counter++
 	}
 
-	// fmt.Printf("%+v\n", certs)
-
 	// parse remote
 
-	url := "http://localhost:8999/osx-elcapitan-trusted.json"
+	// TODO get URL based on OS X version
+	url := "https://s3.amazonaws.com/rootca-auditor/osx-elcapitan-trusted.json"
 	response, err := http.Get(url)
 
 	if err != nil {
@@ -71,8 +70,6 @@ func main() {
 		log.Println("Error parsing remote root certificate list")
 		os.Exit(1)
 	}
-
-	// fmt.Printf("%+v\n", remoteCerts)
 
 	// compare certs
 
@@ -92,7 +89,8 @@ func main() {
 		}
 
 		if found {
-			fmt.Printf("VERIFIED: %s, %s\n", cname, cserial)
+			// TODO add flag to also show verified
+			// fmt.Printf("VERIFIED: %s, %s\n", cname, cserial)
 		} else {
 			fmt.Printf("REMOTE NOT EXIST: %s, %s\n", cname, cserial)
 		}
