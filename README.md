@@ -10,15 +10,6 @@ PRs are welcomed.
 Working platform
 * OS X El Capitan ([from Apple](https://support.apple.com/en-au/HT205204))
 
-Planned platform
-* OS X Yosemite ([from Apple](https://support.apple.com/en-au/HT205218))
-* OS X Mavericks ([from Apple](https://support.apple.com/en-au/HT203120))
-* ca-certificates based Linux/BSD
-* Windows 10
-* Windows 8.1
-* Windows 8
-* Windows 7
-
 ## Installation and Usage
 
 As this project is just few days old, currently there's no binary available.
